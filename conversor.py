@@ -1,3 +1,5 @@
+__version__ = "1.0.0"
+
 import json
 import random
 from datetime import datetime
@@ -34,7 +36,7 @@ def actualizar_tasas(ruta):
   json.dump(tasas, archivo, indent=2)
 
 # Ejemplo de uso
-if _name_ == "_main_":
+if __name__ == "__main__":
   #actualizar las tasa
   actualizar_tasas("data/tasas.json")
   tasas = cargar_tasas("data/tasas.json")
